@@ -1,10 +1,4 @@
 import { NextResponse } from "next/server";
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-    title: 'Serch || Request and Provide',
-    description: 'Serchservice platform for users and providers',
-}
 
 export async function GET(request: Request,
     {params} : {
