@@ -1,17 +1,10 @@
-
 import { CharacterCheckers } from "@/exports";
 import { RtcRole, RtcTokenBuilder } from "agora-token";
 import { NextResponse } from "next/server";
 
-export async function GET(
-    request: Request,
-    {params} : {
-        params: {
-            channel: string,
-            serch_id: string
-        }
-    }
-) {
+// api.serchservice.com/token/call?channel=34dwdw&user_call_id=89889789
+
+export async function GET(request: Request) {
     if(request.url.includes("channel") && request.url.includes("user_call_id")) {
         var channelIndex = request.url.indexOf("channel");
         var user_call_idIndex = request.url.indexOf("user_call_id");
