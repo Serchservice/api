@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-// api.serchservice.com/fetch?keys=google
+// api.serchservice.com/fetch?key=google
 
 export async function GET(request: Request,
     {params} : {
